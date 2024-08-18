@@ -8,11 +8,9 @@ dotenv.config();
 
 const startServer = async () => {
     try {
-        // Initialize the database connection
         await AppDataSource.initialize();
-        console.log("Data Source has been initialized!");
+        console.log("Data Source has been initialised!");
 
-        // Create and start the Express server
         const app = createServer();
         const PORT = Number(process.env.PORT) ?? 3000;
         app.listen(PORT, () => {
@@ -21,7 +19,7 @@ const startServer = async () => {
 
         initialiseWorker();
     } catch (error) {
-        console.error("Error during Data Source initialization:", error);
+        console.error("Error during Data Source initialisation:", error);
         process.exit(1);
     }
 };
