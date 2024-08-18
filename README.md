@@ -38,9 +38,13 @@ Before you begin, make sure you have the following installed:
 The API consists of the following endpoints:
 
 POST /tasks: Add a new task to the queue. Required fields: "title", "description"
+
 GET /tasks: Retrieve all tasks
+
 GET /tasks/:id: Retrieve a specific task
+
 PUT /tasks/:id: Update a task's status. Required field: "status" (cannot be IN_PROGRESS)
+
 DELETE /tasks/:id: Remove a task from the queue and database
 
 ## Submission Details
