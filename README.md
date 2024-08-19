@@ -47,6 +47,16 @@ PUT /tasks/:id: Update a task's status. Required field: "status" (cannot be IN_P
 
 DELETE /tasks/:id: Remove a task from the queue and database
 
+The TaskResponse looks like so:
+{
+  "id": 1,
+  "title": "Example Task",
+  "description": "This is an example task.",
+  "status": "PENDING",
+  "created_at": "2024-08-01T12:00:00Z",
+  "updated_at": "2024-08-01T12:00:00Z"
+}
+
 ## Submission Details
 Technologies Used
 Node.js
